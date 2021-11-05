@@ -563,8 +563,8 @@ h3.bottom-margin {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: 0.1em;
     color: #fff;
     margin-right: 10px;
@@ -577,18 +577,22 @@ h3.bottom-margin {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.1em;
-    color: #0b1437; }
+    color: #0b1437;
+    padding: 4px 16px; }
 
 .popup-scroller {
   height: calc(100vh - 215px);
   overflow-y: auto;
   text-align: left; }
   .popup-scroller h2 {
-    color: #0b1437; }
+    color: #0b1437;
+    font-size: 18px; }
   .popup-scroller h3 {
-    color: #0b1437; }
+    color: #0b1437;
+    font-size: 18px; }
   .popup-scroller h4 {
-    color: #0b1437; }
+    color: #0b1437;
+    font-size: 18px; }
   .popup-scroller p {
     color: #0b1437;
     font-weight: 400; }
