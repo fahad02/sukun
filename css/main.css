@@ -586,18 +586,26 @@ h3.bottom-margin {
   text-align: left; }
   .popup-scroller h2 {
     color: #0b1437;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-bottom: 0px; }
   .popup-scroller h3 {
     color: #0b1437;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-bottom: 0px; }
   .popup-scroller h4 {
     color: #0b1437;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-bottom: 0px; }
   .popup-scroller p {
     color: #0b1437;
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.1rem;
+    margin: 0px; }
   .popup-scroller ul li {
-    margin-bottom: 6px; }
+    margin-bottom: 6px;
+    font-size: 13px;
+    line-height: 1.1rem; }
 
 /* ==========================================================================
    Remodal's necessary styles
