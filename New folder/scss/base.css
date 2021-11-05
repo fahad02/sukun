@@ -1,7 +1,4 @@
-body {
-  font-family: "Lato", sans-serif;
-  font-display: swap; }
-
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 body {
   background: #cbccce; }
 
@@ -101,17 +98,17 @@ header #menu li.active a {
   right: calc(70vw - 520px);
   left: -4vw; }
 
-.ms-viewing-Philosophy .main-bottle img {
+.ms-viewing-philosphy .main-bottle img {
   position: absolute;
   left: calc(70vw - 520px); }
 
 .light-section {
   background: #ebecee; }
 
-.Philosophy-right {
+.philosphy-right {
   background: #f0f6ff; }
 
-.Philosophy-left {
+.philosphy-left {
   background: #cbccce; }
 
 .shop-left {
@@ -164,9 +161,9 @@ a {
 .ms-viewing-shop .ms-right {
   width: 70% !important; }
 
-.ms-viewing-Philosophy .ms-left {
+.ms-viewing-philosphy .ms-left {
   width: 70% !important; }
-.ms-viewing-Philosophy .ms-right {
+.ms-viewing-philosphy .ms-right {
   width: 30% !important; }
 
 .bottle-bg-shade {
@@ -189,7 +186,7 @@ p {
 .ms-tableCell {
   padding: 0px 20%; }
 
-.Philosophy-wrapper {
+.philosphy-wrapper {
   width: 90%;
   text-align: left; }
 
@@ -214,8 +211,7 @@ h3 {
 
 .founder {
   display: flex;
-  align-items: center;
-  margin-top: 35px; }
+  align-items: center; }
   .founder .founder-heading {
     font-weight: 600;
     font-size: 18px;
@@ -235,13 +231,9 @@ h3 {
 
 .scroller-wrap {
   max-height: 600px;
-  display: flex;
-  position: relative; }
+  display: flex; }
   .scroller-wrap .wrapper-center {
     justify-content: flex-start; }
-
-.ss-container {
-  position: relative; }
 
 .ss-scroll {
   background: #838383 !important; }
@@ -415,15 +407,15 @@ h3.bottom-margin {
 
 .mobile-shop-cta {
   display: table;
-  margin: 20px 0 40px; }
+  margin: 20px 0; }
 
 .content-desc {
   color: #0b1437;
   font-weight: 400; }
 
-.Philosophy-left .Philosophy-wrapper {
+.philosphy-left .philosphy-wrapper {
   color: #0b1437; }
-.Philosophy-left h4 {
+.philosphy-left h4 {
   color: #0b1437; }
 
 .mobile-menu-copyright {
@@ -490,7 +482,7 @@ h3.bottom-margin {
   flex-direction: column;
   position: relative;
   /* margin: auto; */
-  left: -2px;
+  left: 5px;
   align-items: center;
   /* bottom: 30px; */
   text-align: center; }
@@ -509,45 +501,11 @@ h3.bottom-margin {
   gap: 15px;
   margin-bottom: 10px; }
 
-.Philosophy-left .ms-tableCell {
+.philosphy-left .ms-tableCell {
   position: relative;
   z-index: 10; }
-  .Philosophy-left .ms-tableCell .ss-content {
+  .philosphy-left .ms-tableCell .ss-content {
     height: calc(100% - 70px); }
-
-.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.75); }
-
-.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
-.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
-  background-color: rgba(107, 107, 107, 0.9) !important; }
-
-.Philosophy-wrapper {
-  max-height: 500px; }
-
-.malibu-scroll {
-  max-height: 580px; }
-
-.mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
-  opacity: 0; }
-
-#menu {
-  position: fixed;
-  top: 30px; }
-
-.shipping-detail-row {
-  background: #04091e;
-  color: white;
-  position: fixed;
-  z-index: 5;
-  width: 100%;
-  line-height: 30px;
-  text-align: center;
-  top: 0; }
-
-.mobile-menu-btn {
-  top: 25px; }
 
 .accordion {
   padding: 0px; }
@@ -724,24 +682,12 @@ h3.bottom-margin {
     opacity: 0; }
   100% {
     opacity: 1; } }
+body {
+  font-family: "Lato", sans-serif; }
+
 @media only screen and (min-width: 320px) and (max-width: 1023px) {
   body {
     overflow-x: hidden; }
-
-  .ingredients .ss-content {
-    overflow: visible !important; }
-  .ingredients .ss-scroll {
-    display: none !important;
-    top: 0px !important;
-    bottom: 0px !important;
-    height: 100% !important; }
-
-  mobile-shop-cta {
-    display: flex;
-    margin: 20px auto;
-    justify-content: center;
-    width: 150px;
-    order: 2; }
 
   #animation {
     height: 100vh;
@@ -758,7 +704,7 @@ h3.bottom-margin {
     display: flex;
     margin: 20px auto;
     justify-content: center;
-    width: 150px;
+    width: 198px;
     order: 2; }
 
   .accordion .accordion-content p {
@@ -908,7 +854,7 @@ h3.bottom-margin {
     text-align: left;
     line-height: 22px; }
 
-  .Philosophy-left .Philosophy-wrapper {
+  .philosphy-left .philosphy-wrapper {
     margin-top: 0px; }
 
   .accordion button .icon::after {
@@ -941,20 +887,6 @@ h3.bottom-margin {
     display: flex !important; }
     body #myContainer .mobile-fix .ms-tableCell {
       height: 0px !important; } }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .Philosophy-left .scroller-wrap {
-    max-height: 2000px; }
-    .Philosophy-left .scroller-wrap .ss-scroll {
-      display: none;
-      top: 0px !important; } }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .main-bottle img {
-    width: 100%; }
-
-  .Philosophy-left .Philosophy-wrapper {
-    color: #0b1437;
-    max-height: 600px;
-    overflow: auto; } }
 @media only screen and (min-width: 1024px) and (max-width: 9999px) {
   .mobile-menu-btn {
     display: none; }
@@ -962,6 +894,9 @@ h3.bottom-margin {
   .ms-table.active .ms-tableCell {
     animation: fade-content 1s;
     opacity: 1; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-bottle img {
+    width: 100%; } }
 @media only screen and (min-width: 1024px) and (max-width: 1360px) {
   .main-bottle img {
     width: 62%; }
@@ -1011,7 +946,7 @@ h3.bottom-margin {
   .content-heading {
     font-size: 30px; }
 
-  .ms-viewing-Philosophy .main-bottle img {
+  .ms-viewing-philosphy .main-bottle img {
     position: absolute;
     left: calc(70vw - 330px); }
 
@@ -1048,10 +983,11 @@ h3.bottom-margin {
   footer ul {
     padding: 10px 60px; }
 
-  .Philosophy-left .ms-tableCell .ss-content {
-    height: calc(100% - 0px); }
+  .ms-viewing-philosphy .scroller-wrap {
+    padding-top: 90px;
+    padding-bottom: 90px; }
 
-  .ms-viewing-Philosophy .ms-tableCell {
+  .ms-viewing-philosphy .ms-tableCell {
     height: 70%; } }
 
 /*# sourceMappingURL=base.css.map */

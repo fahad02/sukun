@@ -235,13 +235,9 @@ h3 {
 
 .scroller-wrap {
   max-height: 600px;
-  display: flex;
-  position: relative; }
+  display: flex; }
   .scroller-wrap .wrapper-center {
     justify-content: flex-start; }
-
-.ss-container {
-  position: relative; }
 
 .ss-scroll {
   background: #838383 !important; }
@@ -505,49 +501,16 @@ h3.bottom-margin {
   color: #0b1437; }
 
 .footer-social-desktop {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 40px);
+  grid-gap: 15px; }
 
 .Philosophy-left .ms-tableCell {
   position: relative;
   z-index: 10; }
   .Philosophy-left .ms-tableCell .ss-content {
     height: calc(100% - 70px); }
-
-.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.75); }
-
-.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
-.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
-  background-color: rgba(107, 107, 107, 0.9) !important; }
-
-.Philosophy-wrapper {
-  max-height: 500px; }
-
-.malibu-scroll {
-  max-height: 580px; }
-
-.mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
-  opacity: 0; }
-
-#menu {
-  position: fixed;
-  top: 30px; }
-
-.shipping-detail-row {
-  background: #04091e;
-  color: white;
-  position: fixed;
-  z-index: 5;
-  width: 100%;
-  line-height: 30px;
-  text-align: center;
-  top: 0; }
-
-.mobile-menu-btn {
-  top: 25px; }
 
 .accordion {
   padding: 0px; }
@@ -727,14 +690,6 @@ h3.bottom-margin {
 @media only screen and (min-width: 320px) and (max-width: 1023px) {
   body {
     overflow-x: hidden; }
-
-  .ingredients .ss-content {
-    overflow: visible !important; }
-  .ingredients .ss-scroll {
-    display: none !important;
-    top: 0px !important;
-    bottom: 0px !important;
-    height: 100% !important; }
 
   mobile-shop-cta {
     display: flex;
@@ -941,20 +896,6 @@ h3.bottom-margin {
     display: flex !important; }
     body #myContainer .mobile-fix .ms-tableCell {
       height: 0px !important; } }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .Philosophy-left .scroller-wrap {
-    max-height: 2000px; }
-    .Philosophy-left .scroller-wrap .ss-scroll {
-      display: none;
-      top: 0px !important; } }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .main-bottle img {
-    width: 100%; }
-
-  .Philosophy-left .Philosophy-wrapper {
-    color: #0b1437;
-    max-height: 600px;
-    overflow: auto; } }
 @media only screen and (min-width: 1024px) and (max-width: 9999px) {
   .mobile-menu-btn {
     display: none; }
@@ -962,6 +903,9 @@ h3.bottom-margin {
   .ms-table.active .ms-tableCell {
     animation: fade-content 1s;
     opacity: 1; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-bottle img {
+    width: 100%; } }
 @media only screen and (min-width: 1024px) and (max-width: 1360px) {
   .main-bottle img {
     width: 62%; }
@@ -1048,10 +992,11 @@ h3.bottom-margin {
   footer ul {
     padding: 10px 60px; }
 
-  .Philosophy-left .ms-tableCell .ss-content {
-    height: calc(100% - 0px); }
+  .ms-viewing-Philosophy .scroller-wrap {
+    padding-top: 90px;
+    padding-bottom: 90px; }
 
   .ms-viewing-Philosophy .ms-tableCell {
     height: 70%; } }
 
-/*# sourceMappingURL=base.css.map */
+/*# sourceMappingURL=main.css.map */
