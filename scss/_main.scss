@@ -789,6 +789,12 @@ h3.bottom-margin {
             margin-bottom: 6px;
             font-size: 13px;
             line-height: 1.1rem;
+
+            a {
+                color: #0b1437;
+    font-weight: 400;
+    font-size: 13px;
+            }
         }
     }
 }
@@ -806,7 +812,7 @@ h3.bottom-margin {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  z-index: 99;
+  z-index: 999;
 }
 
 /* Modal Content */
