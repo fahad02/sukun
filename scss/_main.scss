@@ -811,11 +811,12 @@ h3.bottom-margin {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #ebecee;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  position: relative;
 }
 
 /* The Close Button */
@@ -824,6 +825,9 @@ h3.bottom-margin {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  position: absolute;
+  right: 6px;
+  top: -4px;
 }
 
 .close:hover,
