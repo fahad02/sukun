@@ -782,6 +782,12 @@ h3.bottom-margin {
     font-size: 13px;
     line-height: 1.1rem;
     margin: 0px;
+    a {
+        color: #0b1437;
+        font-weight: 400;
+        font-size: 13px;
+        text-decoration: underline;
+    }
     }
     ul {
         li {
@@ -789,11 +795,12 @@ h3.bottom-margin {
             margin-bottom: 6px;
             font-size: 13px;
             line-height: 1.1rem;
-
+            color: #0b1437 !important;
             a {
                 color: #0b1437;
-    font-weight: 400;
-    font-size: 13px;
+                font-weight: 400;
+                font-size: 13px;
+                text-decoration: underline;
             }
         }
     }
