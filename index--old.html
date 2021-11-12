@@ -88,7 +88,7 @@
 
 </head>
 
-<body > <!--onload="getCookieConsentStatus()"-->
+<body>
  <div id="animation">
   <!-- Start REVOLUTION SLIDER -->
 
@@ -941,12 +941,11 @@
   
  </div>
 
- <div class="footer-cookies-wrap" id="cookie-div" style="display: none;">
+ <div class="footer-cookies-wrap">
   <p>
    This website uses cookies to improve user experience. By using the website you agree to the use of cookies. Got it <a href="#" id="myBtn">Learn More</a>
   </p>
-  <button style="margin-right: 4px;" onclick="enableCookies()">OK</button>
-  <button onclick="disableCookies()">Cancel</button>
+  <button>OK</button>
 </div>
 
 
@@ -1683,81 +1682,6 @@
  </script>
 
  <script>
-
-// Start Cookies
-function setCookie(cname, cvalue, exdays) {
-  const cdate = new Date();
-  cdate.setTime(cdate.getTime() + (exdays * 24 * 60 * 60 * 1000));
-  let expires = "expires=" + cdate.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
- }
-
- function getCookie(cname) {
-   let name = cname + "=";
-   let decodedCookie = decodeURIComponent(document.cookie);
-   let cookieArray = decodedCookie.split(';');
-   for(let i=0;i<cookieArray.length;i++) {
-     let cookieObj = cookieArray[i];
-     while(cookieObj.charAt(0) == ' ') {
-       cookieObj = cookieObj.substring(1);
-     }
-     if (cookieObj.indexOf(name) == 0) {
-       return cookieObj.substring(name.length, cookieObj.length)
-     }
-
-   }
-   return "";
- }
-
- $(document).ready(function () {
-  
-  try{
-    if(getCookieConsentStatus()==null ) {
-      var cookieDiv = document.getElementById("cookie-div");
-      cookieDiv.style.display = 'flex';
-    }
-
-  }
-  catch(e) {
-    var cookieDiv = document.getElementById("cookie-div");
-      cookieDiv.style.display = 'flex';
- }}
-  )
- function getCookieConsentStatus(){
-  return localStorage.getItem('cookies_enabled');
- }
-
-//  function checkCookie() {
-//    if(getCookieConsentStatus()==1){
-//         let username = getCookie("username");
-//       if (username != "") {
-//       alert("Welcome again " + username);
-//       } else {
-//         username = prompt("Please enter your name:", "");
-//         if (username != "" && username != null) {
-//           setCookie("username", username, 365);
-//         }
-//       }
-//    }
-
-// }
-
-  function enableCookies() {
-    localStorage.setItem('cookies_enabled',1);
-
-    var cookieDiv = document.getElementById("cookie-div");
-    cookieDiv.style.display = 'none';
-  }
-
-  function disableCookies() {
-    localStorage.setItem('cookies_enabled',0);
-
-    var cookieDiv = document.getElementById("cookie-div");
-    cookieDiv.style.display = 'none';
-  }
-   
-// END Cookie
-
   var n = localStorage.getItem('on_load_counter');
   if (n === null) {
    n = 0;
