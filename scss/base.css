@@ -123,7 +123,7 @@ header #menu li.active a {
 footer {
   position: absolute;
   z-index: 15;
-  bottom: 0px;
+  bottom: 33px;
   width: 100%; }
   footer ul {
     display: flex;
@@ -549,6 +549,124 @@ h3.bottom-margin {
 .mobile-menu-btn {
   top: 25px; }
 
+/*fahad add css*/
+.footer-cookies-wrap {
+  background: #949394;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 20; }
+  .footer-cookies-wrap p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    margin-right: 10px;
+    margin: 0px;
+    padding: 12px; }
+    .footer-cookies-wrap p a {
+      text-decoration: underline; }
+  .footer-cookies-wrap button {
+    border: 0px solid #fff;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    color: #0b1437;
+    padding: 4px 16px; }
+
+.popup-scroller {
+  height: calc(100vh - 215px);
+  overflow-y: auto;
+  text-align: left; }
+  .popup-scroller h2 {
+    color: #0b1437;
+    font-size: 18px;
+    margin-bottom: 0px; }
+  .popup-scroller h3 {
+    color: #0b1437;
+    font-size: 18px;
+    margin-bottom: 0px; }
+  .popup-scroller h4 {
+    color: #0b1437;
+    font-size: 18px;
+    margin-bottom: 0px; }
+  .popup-scroller p {
+    color: #0b1437;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.1rem;
+    margin: 0px; }
+    .popup-scroller p a {
+      color: #0b1437;
+      font-weight: 400;
+      font-size: 13px;
+      text-decoration: underline; }
+  .popup-scroller ul li {
+    margin-bottom: 6px;
+    font-size: 13px;
+    line-height: 1.1rem;
+    color: #0b1437 !important; }
+    .popup-scroller ul li a {
+      color: #0b1437;
+      font-weight: 400;
+      font-size: 13px;
+      text-decoration: underline; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  z-index: 999; }
+
+/* Modal Content */
+.modal-content {
+  background-color: #ebecee;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  position: relative; }
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 6px;
+  top: -4px; }
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
 .accordion {
   padding: 0px; }
   .accordion button {
@@ -886,7 +1004,8 @@ h3.bottom-margin {
 
   .ms-tableCell-mobile-height .ms-tableCell {
     height: auto !important;
-    padding: 35px; }
+    padding: 35px;
+    padding-bottom: 124px; }
 
   .content-heading {
     width: 100%;
@@ -946,7 +1065,21 @@ h3.bottom-margin {
     max-height: 2000px; }
     .Philosophy-left .scroller-wrap .ss-scroll {
       display: none;
-      top: 0px !important; } }
+      top: 0px !important; }
+
+  .footer-cookies-wrap {
+    padding: 15px;
+    flex-direction: column;
+    width: auto; }
+    .footer-cookies-wrap p {
+      text-align: center;
+      margin: 0px;
+      padding-top: 0px; }
+    .footer-cookies-wrap button {
+      width: 50%;
+      padding: 6px;
+      margin: 0px !important;
+      margin-bottom: 6px !important; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .main-bottle img {
     width: 100%; }

@@ -472,8 +472,7 @@
         </div>
 
         <p style="font-style: italic; font-size: 17px;">
-         “For me the best kind of self-care comes from the daily
-         ritual of taking care of my skin. To me the best kind of self-care comes from the daily ritual of taking care of myself.”
+         “To me the best kind of self-care comes from the daily ritual of taking care of myself.”
         </p>
 
         <p>
@@ -1156,6 +1155,42 @@
 
 </div>
 
+<!--load page modal-->
+<div class="modal modal1 fade" id="myModal1">
+  <div class="modal-dialog modal-lg modal-dialog-centered " role="document">
+      <div class="modal-content bg-modal">
+        <div class="info-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Happy Holidays</h4>
+            <span>from Pure Sukún!</span>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <h5>
+            To spread some holiday cheer,
+we are offering <strong>free gifts*</strong>
+and <strong>free shipping</strong> on orders
+over $100
+          </h5>
+          <button class="order-now-btn">Order Now</button>
+          <p style="font-size: 10px;margin: 0;color: #ffffffad;">* Only till supplies last, no code required.
+          </p>
+        </div>
+        </div>  
+          <div class="img-cart-wrap">
+            <img src="images/Bottle-and-Bag.png" alt="">
+          </div>
+          <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
+          </div> -->
+      </div>
+  </div>
+</div>
+
+
+
  
  <script type="text/javascript">
   /*<![CDATA[*/
@@ -1532,11 +1567,6 @@
 
  <script type="text/javascript">
 
-
-
-
-
-
   $(document).ready(function () {
    $("#myContainer").multiscroll({
     // sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
@@ -1794,6 +1824,24 @@ function setCookie(cname, cvalue, exdays) {
       modal.style.display = "none";
     }
   }
+  </script>
+
+<script type="text/javascript">
+ $(window).on('load',function(){
+    var delayMs = 1500; // delay in milliseconds
+    
+    setTimeout(function(){
+        $('#myModal1').modal1('show');
+    }, delayMs);
+});
+</script>
+<script type="text/javascript">
+  jQuery(document).ready(function()
+  {
+  jQuery(".close").click(function(){
+       jQuery(".modal1").toggleClass("close-modal");
+    });
+  });
   </script>
 </body>
 

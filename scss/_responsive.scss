@@ -314,6 +314,33 @@
      }
 
  }
+ .bg-modal {
+    width: 90%;
+    flex-direction: column; 
+
+    .info-content {
+        h4 {
+            font-size: 30px;
+    line-height: 36px;
+        }
+       h5 {
+        line-height: 1.2rem;
+        font-size: 15.5px;
+       } 
+    }
+
+    .img-cart-wrap {
+        img {
+            width: 65%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin: 27px auto 6px;
+        }
+
+    }
+ }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
