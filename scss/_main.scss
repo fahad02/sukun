@@ -866,7 +866,7 @@ h3.bottom-margin {
   .bg-modal {
     background-image: url(../images/seqbirz8.png);
     background-repeat: no-repeat;
-    width: 40%;
+    width: 620px;
     border: 12px solid #000000d4;
     color: #fff;
     background-size: cover;
@@ -914,6 +914,7 @@ h3.bottom-margin {
             padding: 8px 18px;
             color: #fff;
             cursor: pointer;
+            font-size: 13px;
         }
     
         h5 {
@@ -931,6 +932,11 @@ h3.bottom-margin {
     }
 
   }
+  .modal-dialog-centered1 {
+    display: flex;
+align-items: center;
+height: calc(100% - (1.75rem * 6));
+}
   .close-modal {
       display: none !important;
   }

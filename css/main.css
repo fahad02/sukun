@@ -693,7 +693,7 @@ h3.bottom-margin {
 .bg-modal {
   background-image: url(../images/seqbirz8.png);
   background-repeat: no-repeat;
-  width: 40%;
+  width: 620px;
   border: 12px solid #000000d4;
   color: #fff;
   background-size: cover;
@@ -728,7 +728,8 @@ h3.bottom-margin {
       box-sizing: border-box;
       padding: 8px 18px;
       color: #fff;
-      cursor: pointer; }
+      cursor: pointer;
+      font-size: 13px; }
     .bg-modal .info-content h5 {
       width: 79%;
       line-height: 1.7rem;
@@ -738,6 +739,11 @@ h3.bottom-margin {
       .bg-modal .info-content h5 strong {
         color: #fff;
         font-weight: normal; }
+
+.modal-dialog-centered1 {
+  display: flex;
+  align-items: center;
+  height: calc(100% - (1.75rem * 6)); }
 
 .close-modal {
   display: none !important; }
@@ -1159,18 +1165,23 @@ h3.bottom-margin {
   .bg-modal {
     width: 90%;
     flex-direction: column; }
-    .bg-modal .info-content h4 {
-      font-size: 30px;
-      line-height: 36px; }
-    .bg-modal .info-content h5 {
-      line-height: 1.2rem;
-      font-size: 15.5px; }
+    .bg-modal .info-content {
+      order: 2; }
+      .bg-modal .info-content h4 {
+        font-size: 30px;
+        line-height: 36px;
+        margin-top: 6px; }
+      .bg-modal .info-content h5 {
+        line-height: 1.2rem;
+        font-size: 15.5px; }
+      .bg-modal .info-content .modal-body {
+        margin-bottom: 10px; }
     .bg-modal .img-cart-wrap img {
       width: 65%;
       text-align: center;
       display: flex;
       justify-content: center;
-      margin: 27px auto 6px; } }
+      margin: 0px auto; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .main-bottle img {
     width: 100%; }
