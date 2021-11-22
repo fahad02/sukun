@@ -711,7 +711,12 @@ h3.bottom-margin {
     font-weight: normal;
     height: 32px;
     width: 32px;
-    line-height: 0px; }
+    line-height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .bg-modal .modal-header .close span {
+      font-size: 25px; }
   .bg-modal .info-content {
     padding-left: 36px; }
     .bg-modal .info-content h4 {
