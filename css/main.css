@@ -668,7 +668,7 @@ h3.bottom-margin {
   cursor: pointer; }
 
 .modal1 {
-  display: block;
+  display: flex;
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
@@ -688,7 +688,8 @@ h3.bottom-margin {
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
-  z-index: 999; }
+  z-index: 999;
+  justify-content: center; }
 
 .bg-modal {
   background-image: url(../images/seqbirz8.png);
@@ -752,6 +753,9 @@ h3.bottom-margin {
 
 .close-modal {
   display: none !important; }
+
+.hide-div {
+  display: none; }
 
 .accordion {
   padding: 0px; }
@@ -1145,7 +1149,13 @@ h3.bottom-margin {
     height: 0px !important;
     display: flex !important; }
     body #myContainer .mobile-fix .ms-tableCell {
-      height: 0px !important; } }
+      height: 0px !important; }
+
+  .formula-wrapper .mCustomScrollBox {
+    height: auto !important;
+    max-height: none !important; }
+  .formula-wrapper .mCSB_1_scrollbar {
+    display: none; } }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .Philosophy-left .scroller-wrap {
     max-height: 2000px; }
@@ -1186,7 +1196,12 @@ h3.bottom-margin {
       text-align: center;
       display: flex;
       justify-content: center;
-      margin: 0px auto; } }
+      margin: 0px auto; }
+
+  .founder {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .main-bottle img {
     width: 100%; }
