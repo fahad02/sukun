@@ -1258,7 +1258,7 @@
             <h4 class="modal-title">Happy Holidays</h4>
             <span>from Pure Sukún!</span>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true"><img src="images/close.svg" alt=""></span>
+              <span aria-hidden="true"><img src="images/close-btn-x.svg" alt=""></span>
             </button>
           </div>
           <div class="modal-body">
@@ -1936,6 +1936,7 @@
     jQuery(document).ready(function () {
       jQuery(".close, a").click(function () {
         setCookie("popup-disabled", "true", 7);
+          document.getElementById("myModal1").style.display = "none";
         jQuery(".modal1").toggleClass("close-modal");
       });
     });
