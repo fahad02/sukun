@@ -1178,21 +1178,23 @@ h3.bottom-margin {
       margin: 0px !important;
       margin-bottom: 6px !important; }
 
-  .bg-modal {
-    width: 90%;
-    flex-direction: column; }
-    .bg-modal .info-content {
-      order: 2; }
-      .bg-modal .info-content h4 {
-        font-size: 30px;
-        line-height: 36px;
-        margin-top: 6px; }
-      .bg-modal .info-content h5 {
-        line-height: 1.2rem;
-        font-size: 15.5px; }
-      .bg-modal .info-content .modal-body {
-        margin-bottom: 10px; }
-    .bg-modal .img-cart-wrap img {
+  .happy-holidays-modal {
+    width: 86%; }
+    .happy-holidays-modal .bg-modal {
+      width: 100%;
+      flex-direction: column; }
+      .happy-holidays-modal .bg-modal .info-content {
+        order: 2; }
+        .happy-holidays-modal .bg-modal .info-content h4 {
+          font-size: 30px;
+          line-height: 36px;
+          margin-top: 6px; }
+        .happy-holidays-modal .bg-modal .info-content h5 {
+          line-height: 1.2rem;
+          font-size: 15.5px; }
+        .happy-holidays-modal .bg-modal .info-content .modal-body {
+          margin-bottom: 10px; }
+    .happy-holidays-modal .img-cart-wrap img {
       width: 65%;
       text-align: center;
       display: flex;

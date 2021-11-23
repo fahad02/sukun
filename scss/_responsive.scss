@@ -323,25 +323,30 @@
      }
 
  }
- .bg-modal {
-    width: 90%;
-    flex-direction: column; 
-
-    .info-content {
-        order: 2;
-        h4 {
-            font-size: 30px;
-    line-height: 36px;
-    margin-top: 6px;
+ .happy-holidays-modal {
+    width: 86%;
+    .bg-modal {
+        width: 100%;
+        flex-direction: column; 
+        .info-content {
+            order: 2;
+            h4 {
+                font-size: 30px;
+        line-height: 36px;
+        margin-top: 6px;
+            }
+           h5 {
+            line-height: 1.2rem;
+            font-size: 15.5px;
+           } 
+           .modal-body {
+               margin-bottom: 10px;
+           }
         }
-       h5 {
-        line-height: 1.2rem;
-        font-size: 15.5px;
-       } 
-       .modal-body {
-           margin-bottom: 10px;
-       }
+
     }
+
+    
 
     .img-cart-wrap {
         img {
