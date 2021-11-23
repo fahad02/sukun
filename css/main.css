@@ -1156,7 +1156,7 @@ h3.bottom-margin {
     height: auto !important;
     max-height: none !important; }
   .formula-wrapper .mCSB_1_scrollbar {
-    display: none; } }
+    display: none !important; } }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .Philosophy-left .scroller-wrap {
     max-height: 2000px; }
