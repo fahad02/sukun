@@ -695,7 +695,6 @@ h3.bottom-margin {
   background-image: url(../images/seqbirz8.png);
   background-repeat: no-repeat;
   width: 620px;
-  border: 12px solid #000000d4;
   color: #fff;
   background-size: cover;
   padding: 0px;
@@ -704,7 +703,7 @@ h3.bottom-margin {
     color: #ffffffad;
     font-size: 16.5px; }
   .bg-modal .modal-header .close {
-    background: rgba(255, 255, 255, 0.4);
+    background: transparent;
     border: none;
     border-radius: 50%;
     top: 3px;
@@ -754,8 +753,10 @@ h3.bottom-margin {
 .close-modal {
   display: none !important; }
 
-.hide-div {
-  display: none; }
+.happy-holidays-modal {
+  width: 620px;
+  padding: 0px;
+  border: 20px solid #000000d4; }
 
 .accordion {
   padding: 0px; }
