@@ -764,12 +764,14 @@ h3.bottom-margin {
     h2 {
         color: #0b1437;
         font-size: 18px;
-        margin-bottom: 0px;
+        margin-bottom: 2px;
+        margin-top: 0px;
     }
     h3 {
         color: #0b1437; 
         font-size: 18px;
-        margin-bottom: 0px;
+        margin-bottom: 2px;
+        margin-top: 0px; 
     }
     h4 {
         color: #0b1437;
@@ -782,6 +784,7 @@ h3.bottom-margin {
     font-size: 13px;
     line-height: 1.1rem;
     margin: 0px;
+    margin-bottom: 20px;
     a {
         color: #0b1437;
         font-weight: 400;
@@ -826,7 +829,7 @@ h3.bottom-margin {
 .modal-content {
   background-color: #ebecee;
   margin: auto;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #888;
   width: 80%;
   position: relative;
@@ -839,8 +842,8 @@ h3.bottom-margin {
   font-size: 28px;
   font-weight: bold;
   position: absolute;
-  right: 6px;
-  top: -4px;
+  right: 10px;
+  top: 1px;
 }
 
 .close:hover,
