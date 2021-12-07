@@ -953,3 +953,12 @@ height: calc(100% - (1.75rem * 6));
     padding: 0px;
     border: 20px solid #000000d4;
   }
+#myModal3 {
+    .modal-content {
+        width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -94%);
+    }
+}

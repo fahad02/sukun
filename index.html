@@ -336,7 +336,12 @@
               letter-spacing: 1px;
               gap: 0px;
               display: inline-block !important;
-              padding: 1px !important;">Privacy Policy</a>
+              padding: 1px !important;width: auto;">Privacy Policy</a> | <a href="#"  id="myBtn4" style="font-size: 10px;
+              text-transform: capitalize;
+              letter-spacing: 1px;
+              gap: 0px;
+              display: inline-block !important;
+              padding: 1px !important;width: auto;">COVID-19 </a>
             </div>
           </li>
 
@@ -940,7 +945,7 @@
           </div>
 
           <div class="footer-copyright">
-            © 2021 Pure Sukún All rights reserved | <a href="#"  id="myBtn1">Privacy Policy</a>
+            © 2021 Pure Sukún All rights reserved | <a href="#"  id="myBtn1">Privacy Policy</a> | <a href="#"  id="myBtn3">COVID-19</a>
           </div>
 
 
@@ -1290,6 +1295,23 @@
           </div> -->
       </div>
     </div>
+  </div>
+
+
+  <!--Covid-19 modal-->
+  <div id="myModal3" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close close1">&times;</span>
+      
+        <!-- <h2 id="modal1Title">Remodal</h2> -->
+        <h3>COVID-19 Measures</h3>
+        <p id="modal1Desc">
+          Returns for items purchased have been suspended amid the coronavirus outbreak.
+        </p>
+    </div>
+
   </div>
 
 
@@ -1905,11 +1927,15 @@
   <script>
     // Get the modal
     var modal = document.getElementById("myModal");
+    var modal3 = document.getElementById("myModal3");
 
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
   var btn1 = document.getElementById("myBtn1");
   var btn2 = document.getElementById("myBtn2");
+  var btn3 = document.getElementById("myBtn3");
+  var btn4 = document.getElementById("myBtn4");
+
   
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
@@ -1926,6 +1952,14 @@
     modal.style.display = "block";
   }
 
+  btn3.onclick = function() {
+    modal3.style.display = "block";
+  }
+
+  btn4.onclick = function() {
+    modal3.style.display = "block";
+  }
+
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
       modal.style.display = "none";
@@ -1935,6 +1969,9 @@
     window.onclick = function (event) {
       if (event.target == modal) {
         modal.style.display = "none";
+      };
+      if (event.target == modal3) {
+        modal3.style.display = "none";
       }
     }
   </script>
@@ -1955,6 +1992,12 @@
         setCookie("popup-disabled", "true", 1);
           document.getElementById("myModal1").style.display = "none";
         jQuery(".modal1").toggleClass("close-modal");
+      });
+    });
+
+    jQuery(document).ready(function () {
+      jQuery(".close1").click(function () {
+          document.getElementById("myModal3").style.display = "none";
       });
     });
   </script>
