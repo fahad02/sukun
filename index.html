@@ -1576,7 +1576,7 @@
             beforeSend: function(xhr) {
             }, success: function(data){
               continentObj = continent[data.country_code];
-              console.log(data.country_code);
+              // console.log(data.country_code);
               if( blockedRegion.includes(continentObj)) {
                 window.stop();
                 location.replace("error.html");
