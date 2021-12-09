@@ -1569,7 +1569,7 @@
 
     function checkLocation () {
 
-      const blockedRegion = [];
+      const blockedRegion = ["Europe"];
       var countryObj;
       $.ajax({
             url: 'https://api.freegeoip.app/json/?apikey=42500440-5733-11ec-b575-bdf275ee545e',
@@ -1577,7 +1577,11 @@
             }, success: function(data){
               continentObj = continent[data.country_code];
               console.log(data);
-              if( blockedRegion.includes(continentObj)) {
+              var timezoneCheck = false;
+              var tmp;
+              blockedRegion.forEach( element =>  ( (data.time_zone.includes(element)) ? timezoneCheck = true : tmp  ) );
+
+              if( timezoneCheck || blockedRegion.includes(continentObj) ) {
                 window.stop();
                 location.replace("error.html");
               }
