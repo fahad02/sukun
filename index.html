@@ -1569,14 +1569,14 @@
 
     function checkLocation () {
 
-      const blockedRegion = ["Europe"];
+      const blockedRegion = [];
       var countryObj;
       $.ajax({
             url: 'https://api.freegeoip.app/json/?apikey=42500440-5733-11ec-b575-bdf275ee545e',
             beforeSend: function(xhr) {
             }, success: function(data){
               continentObj = continent[data.country_code];
-              console.log(data);
+              console.log(data.country_code);
               if( blockedRegion.includes(continentObj)) {
                 window.stop();
                 location.replace("error.html");
