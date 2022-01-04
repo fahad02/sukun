@@ -587,13 +587,11 @@ h3.bottom-margin {
   .popup-scroller h2 {
     color: #0b1437;
     font-size: 18px;
-    margin-bottom: 2px;
-    margin-top: 0px; }
+    margin-bottom: 0px; }
   .popup-scroller h3 {
     color: #0b1437;
     font-size: 18px;
-    margin-bottom: 2px;
-    margin-top: 0px; }
+    margin-bottom: 0px; }
   .popup-scroller h4 {
     color: #0b1437;
     font-size: 18px;
@@ -603,8 +601,7 @@ h3.bottom-margin {
     font-weight: 400;
     font-size: 13px;
     line-height: 1.1rem;
-    margin: 0px;
-    margin-bottom: 20px; }
+    margin: 0px; }
     .popup-scroller p a {
       color: #0b1437;
       font-weight: 400;
@@ -661,8 +658,8 @@ h3.bottom-margin {
   font-size: 28px;
   font-weight: bold;
   position: absolute;
-  right: 10px;
-  top: 1px; }
+  right: 6px;
+  top: -4px; }
 
 .close:hover,
 .close:focus {
